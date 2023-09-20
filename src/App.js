@@ -1,47 +1,18 @@
-import { useState } from "react";
-import Content from "./Content";
-
-
+import Header from "./components/Header.js";
+import TableUsers from "./components/TableUsers.js";
+import Container from 'react-bootstrap/Container';
 function App() {
-  // const jsonlist = JSON.parse(localStorage.getItem('list'))
-  // console.log(jsonlist)
-  // const [todo, setTodo] = useState('')
-  // const [list, setList] = useState(jsonlist ?? [])
 
-  // const handleAdd = () => {
-  //   if (todo === '') {
-  //     alert('vui long nhap')
-  //     return;
-  //   }
-  //   else {
-  //     setList(prev => {
-  //       const newList = [...prev, todo]
-  //       const newJsonList = JSON.stringify(newList);
-
-  //       localStorage.setItem('list', newJsonList);
-
-  //       return newList
-  //     });
-  //     setTodo('')
-  //   }
-  // }
-  const [show, setShow] = useState(false)
   return (
     <>
-      {/* <div className="App" style={{ padding: 50 }}>
-        <input
-          value={todo}
-          onChange={(e) => setTodo(e.target.value)}
-        />
-        <button onClick={() => handleAdd()}>Add</button>
-        <ul>
-          {list.map((list, index) => (
-            <li key={index}>{list}</li>
-          ))}
-        </ul>
-      </div> */}
-      <button onClick={() => setShow(!show)}>Toogle</button>
-      {show && <Content />}
+      <Header />
+      <Container >
+        <div className="d-flex justify-content-between mb-3">
+          <span className="mb-2"> List Users</span>
+          <button className="btn btn-primary">Add User</button>
+        </div>
+        <TableUsers />
+      </Container>
     </>
   );
 

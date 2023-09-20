@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 // tạo sự kiện fake comment
 // function emitComment(id) {
 //   setInterval(() => {
@@ -19,7 +19,6 @@ import reportWebVitals from './reportWebVitals';
 // emitComment(3)
 
 
-console.log(React);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
