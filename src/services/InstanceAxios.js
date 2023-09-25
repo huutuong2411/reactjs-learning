@@ -5,4 +5,9 @@ const instance = axios.create({
   // headers: { 'X-Custom-Header': 'foobar' }
 });
 
-export default instance;
+//player
+const instancePlayers = axios.create({
+  baseURL: "https://www.thesportsdb.com",
+});
+
+export { instance, instancePlayers };

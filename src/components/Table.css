@@ -1,0 +1,40 @@
+.sort-header {
+  float: right;
+}
+
+.sort-header i {
+  cursor: pointer;
+}
+
+.scrollbar {
+  display: block;
+  height: 500px;
+  width: 100%;
+  background: #fff;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+
+.force-overflow {
+  min-height: 500px;
+}
+.scrollbar-secondary::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.scrollbar-secondary::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.scrollbar-secondary::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #aa66cc;
+}
+
+.scrollbar-secondary {
+  scrollbar-color: #aa66cc #f5f5f5;
+}

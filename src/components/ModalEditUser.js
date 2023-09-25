@@ -35,10 +35,10 @@ function ModalEditUsers(props) {
       </Modal.Header>
       <Modal.Body>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Name:</Form.Label>
+          <Form.Label>First name:</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Your name"
+            placeholder="First name"
             onChange={(event) => setName(event.target.value)}
             value={name || ""}
           />
@@ -48,7 +48,7 @@ function ModalEditUsers(props) {
           <Form.Label>Last name:</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Job"
+            placeholder="Last name"
             value={job || ""}
             onChange={(event) => setJob(event.target.value)}
           />
